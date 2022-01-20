@@ -13,6 +13,9 @@
 		413AA7FA2724B794008D6631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413AA7F92724B794008D6631 /* Assets.xcassets */; };
 		413AA7FD2724B794008D6631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413AA7FB2724B794008D6631 /* LaunchScreen.storyboard */; };
 		413AA81527273B77008D6631 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413AA81427273B77008D6631 /* DateHelper.swift */; };
+		418BDB9E2799CD22006982D1 /* LogListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BDB9D2799CD22006982D1 /* LogListTableViewController.swift */; };
+		418BDBA02799CD3F006982D1 /* LogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BDB9F2799CD3F006982D1 /* LogDetailViewController.swift */; };
+		418BDBA22799CE5C006982D1 /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BDBA12799CE5C006982D1 /* LogTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		413AA7FC2724B794008D6631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413AA7FE2724B794008D6631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413AA81427273B77008D6631 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		418BDB9D2799CD22006982D1 /* LogListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListTableViewController.swift; sourceTree = "<group>"; };
+		418BDB9F2799CD3F006982D1 /* LogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailViewController.swift; sourceTree = "<group>"; };
+		418BDBA12799CE5C006982D1 /* LogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		413AA7EF2724B792008D6631 /* TravelDiary */ = {
 			isa = PBXGroup;
 			children = (
+				418BDB9B2799CCFC006982D1 /* Controllers */,
 				413AA81327273B5A008D6631 /* Helper Files */,
 				413AA80527271158008D6631 /* Resources */,
 				413AA80427271142008D6631 /* Storyboards */,
@@ -89,6 +96,32 @@
 				413AA81427273B77008D6631 /* DateHelper.swift */,
 			);
 			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		418BDB9B2799CCFC006982D1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				418BDB9C2799CD03006982D1 /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		418BDB9C2799CD03006982D1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				418BDB9D2799CD22006982D1 /* LogListTableViewController.swift */,
+				418BDB9F2799CD3F006982D1 /* LogDetailViewController.swift */,
+				418BDBA32799CE68006982D1 /* Custom Cells */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		418BDBA32799CE68006982D1 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				418BDBA12799CE5C006982D1 /* LogTableViewCell.swift */,
+			);
+			path = "Custom Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418BDBA22799CE5C006982D1 /* LogTableViewCell.swift in Sources */,
+				418BDB9E2799CD22006982D1 /* LogListTableViewController.swift in Sources */,
 				413AA7F12724B792008D6631 /* AppDelegate.swift in Sources */,
+				418BDBA02799CD3F006982D1 /* LogDetailViewController.swift in Sources */,
 				413AA7F32724B792008D6631 /* SceneDelegate.swift in Sources */,
 				413AA81527273B77008D6631 /* DateHelper.swift in Sources */,
 			);
